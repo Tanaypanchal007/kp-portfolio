@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Home from "@/components/Home";
 import Navbar from "@/components/Navbar";
 import { FaBarsStaggered } from "react-icons/fa6";
-
+import { IoClose } from "react-icons/io5";
 import { React, useState } from "react";
 
 const index = () => {
@@ -21,14 +21,19 @@ const index = () => {
           <About />
         </div>
         <div className="xl:hidden fixed top-5 right-5 z-50 text-2xl cursor-pointer">
-          <FaBarsStaggered onClick={handleOpen} />
+          {open ? (
+            <IoClose onClick={handleOpen} className="text-2xl" />
+          ) : (
+            <FaBarsStaggered onClick={handleOpen} />
+          )}
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`xl:hidden fixed top-0 left-0 w-[100%]  h-screen  z-40  transition-transform duration-300 ease-in-out ${
+          className={`xl:hidden fixed top-0 left-0 w-[80%] h-screen  z-40  transition-transform duration-300 ease-in-out ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
+          onClick={handleOpen}
         >
           <Navbar />
         </div>

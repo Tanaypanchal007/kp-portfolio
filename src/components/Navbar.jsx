@@ -82,7 +82,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex px-7">
-            <ul className="flex flex-col gap-4  text-xl xl:text-2xl xl:gap-8 font-mono font-light tracking-wider">
+            <ul className="flex flex-col gap-6  text-xl xl:text-2xl xl:gap-8 font-mono font-light tracking-wider">
               <li className="flex gap-3 items-center">
                 <IoHomeOutline />
                 <a href="#home">Home</a>
