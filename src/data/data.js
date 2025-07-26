@@ -65,4 +65,9 @@ export const testimonials = [
         text: "Great communication and very responsive. Loved the work!",
         image: "/images/profile-img.jpg",
     },
+    {
+        name: "Dipak Panchal",
+        text: "Great communication and very responsive. Loved the work!",
+        image: "/images/profile-img.jpg",
+    },
 ]
