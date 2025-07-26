@@ -8,6 +8,7 @@ import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   const [open, setOpen] = useState(false);
@@ -28,6 +29,7 @@ const Index = () => {
           <About />
           <Services />
           <Testimonial />
+          <Contact />
         </div>
 
         {/* Mobile Menu Button */}
