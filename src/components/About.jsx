@@ -5,7 +5,7 @@ import profileImg from "../../public/images/profile-img.jpg";
 const About = () => {
   return (
     <>
-      <section className="h-[100vh] bg-gray-50 pt-10 px-3 xl:pl-3" id="about">
+      <section className="h-fit bg-gray-50 py-10 px-3 xl:pl-3" id="about">
         <div>
           <h1 className="text-4xl font-mono font-bold border-b-4 border-blue-100 w-[80px] pb-3 tracking-normal">
             About
@@ -21,7 +21,8 @@ const About = () => {
             <div className="w-[100%] xl:w-[35%]">
               <Image
                 src={profileImg}
-                className="w-[400px] h-[500px] object-fit rounded-lg"
+                alt="Profile Image"
+                className="w-full max-w-[300px] h-auto object-cover rounded-lg"
               />
             </div>
             <div className="w-[100%] xl:w-[65%] flex flex-col gap-3">

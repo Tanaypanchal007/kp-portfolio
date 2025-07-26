@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import Services from "@/components/Services";
 
 const Index = () => {
   const [open, setOpen] = useState(false);
@@ -24,6 +25,7 @@ const Index = () => {
         <div className=" h-screen">
           <Home />
           <About />
+          <Services />
         </div>
 
         {/* Mobile Menu Button */}
