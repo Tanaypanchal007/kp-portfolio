@@ -1,5 +1,7 @@
 import { PiToolbox } from "react-icons/pi";
 
+
+// Services data that is used in Services.jsx
 export const servicesData = [
     {
         id: 1,
@@ -38,3 +40,29 @@ export const servicesData = [
         description: "Helping you define and grow your brand with digital presence.",
     },
 ];
+
+
+
+// Testimonials data Start Here that is used in Testimonial.jsx
+export const testimonials = [
+    {
+        name: "Kaushik Panchal",
+        text: "He created a stunning and professional website. I'm really ",
+        image: "/images/profile-img.jpg",
+    },
+    {
+        name: "Tanay Panchal",
+        text: "Great communication and very responsive. Loved the work!",
+        image: "/images/profile-img.jpg",
+    },
+    {
+        name: "Hitesh Panchal",
+        text: "Great communication and very responsive. Loved the work!",
+        image: "/images/profile-img.jpg",
+    },
+    {
+        name: " Shubham Panchal",
+        text: "Great communication and very responsive. Loved the work!",
+        image: "/images/profile-img.jpg",
+    },
+]

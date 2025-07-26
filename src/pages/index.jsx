@@ -7,6 +7,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import Services from "@/components/Services";
+import Testimonial from "@/components/Testimonial";
 
 const Index = () => {
   const [open, setOpen] = useState(false);
@@ -26,6 +27,7 @@ const Index = () => {
           <Home />
           <About />
           <Services />
+          <Testimonial />
         </div>
 
         {/* Mobile Menu Button */}
