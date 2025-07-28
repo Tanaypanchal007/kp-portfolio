@@ -37,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h1 className="text-xl font-medium">Contact No</h1>
-                  <p className="text-lg">Ahmedabad, Gujarat, India</p>
+                  <p className="text-lg">+91 1234567890</p>
                 </div>
               </div>
               <div className="flex gap-3 items-center mb-5 xl:mb-10">

@@ -33,11 +33,17 @@ const Index = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="xl:hidden fixed top-5 right-5 z-50 text-2xl cursor-pointer">
+        <div className="xl:hidden fixed top-5 right-5 z-50 text-2xl cursor-pointer ">
           {open ? (
-            <IoClose onClick={handleOpen} />
+            <IoClose
+              onClick={handleOpen}
+              className="bg-blue-100 h-[30px] w-[30px] rounded-full p-1 text-white"
+            />
           ) : (
-            <FaBarsStaggered onClick={handleOpen} />
+            <FaBarsStaggered
+              onClick={handleOpen}
+              className="bg-blue-100 h-[30px] w-[30px] rounded-full p-1 text-white"
+            />
           )}
         </div>
 

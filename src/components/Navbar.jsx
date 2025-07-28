@@ -1,6 +1,7 @@
 import Image from "next/image";
 import profile from "../../public/images/profile-img.jpg";
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import {
   FaXTwitter,
@@ -43,7 +44,7 @@ const Navbar = () => {
               title="Twitter"
               className="bg-amber-200/10 p-2 rounded-full hover:bg-blue-100 transition"
             >
-              <FaXTwitter />
+              <FaWhatsapp />
             </a>
             <a
               href="https://facebook.com/"
