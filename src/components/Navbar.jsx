@@ -20,7 +20,7 @@ import { CiMail } from "react-icons/ci";
 import { PiToolboxLight } from "react-icons/pi";
 import { FaRegMessage } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
       <section className="fixed bg-navbar-100 w-full xl:w-[23%] lg:w-[25%] md:w-[30%] sm:w-[40%]  h-screen text-white overflow-auto">
@@ -85,32 +85,74 @@ const Navbar = () => {
           <div className="flex px-7">
             <ul className="flex flex-col gap-6  text-xl xl:text-2xl xl:gap-8 font-mono font-light tracking-wider">
               <li className="flex gap-3 items-center">
-                <IoHomeOutline />
-                <a href="#home">Home</a>
+                <IoHomeOutline className="" />
+                <a
+                  href="#home"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  Home
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <IoPersonOutline />
-                <a href="#about">About</a>
+                <a
+                  href="#about"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  About
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <IoPersonOutline />
-                <a href="#skills">Skills</a>
+                <a
+                  href="#skills"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  Skills
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <PiToolboxLight />
-                <a href="#experiance">Experiance</a>
+                <a
+                  href="#experiance"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  Experiance
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <FaRegMessage />
-                <a href="#services">Services</a>
+                <a
+                  href="#services"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  Services
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <IoPeopleOutline />
-                <a href="#testimonials">Testimonials</a>
+                <a
+                  href="#testimonials"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  Testimonials
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <CiMail />
-                <a href="#contact">Contact</a>
+                <a
+                  href="#contact"
+                  className="hover:text-blue-100"
+                  onClick={props.toggle}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>

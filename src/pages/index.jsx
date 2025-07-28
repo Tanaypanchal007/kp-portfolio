@@ -9,6 +9,7 @@ import { useState } from "react";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import Contact from "@/components/Contact";
+import Skills from "@/components/Skills";
 
 const Index = () => {
   const [open, setOpen] = useState(false);
@@ -27,6 +28,7 @@ const Index = () => {
         <div className=" h-screen">
           <Home />
           <About />
+          <Skills />
           <Services />
           <Testimonial />
           <Contact />
@@ -53,7 +55,7 @@ const Index = () => {
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <Navbar />
+          <Navbar toggle={handleOpen} />
         </div>
 
         {/* Optional Overlay on mobile */}

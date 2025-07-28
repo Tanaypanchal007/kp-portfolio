@@ -3,10 +3,7 @@ import { servicesData } from "../data/data"; // Adjust path if needed
 
 const Services = () => {
   return (
-    <section
-      className="min-h-screen py-10 px-4   xl:px-5 bg-blue-100/10"
-      id="services"
-    >
+    <section className="h-fit py-10 px-4 xl:px-5 bg-blue-100/10" id="services">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-mono font-bold border-b-4 border-blue-300 w-fit pb-2">
           Services
